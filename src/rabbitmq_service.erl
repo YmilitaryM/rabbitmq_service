@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 -module(rabbitmq_service).
 -include_lib("amqp_client/include/amqp_client.hrl").
--record(rabbitmq_server, {server = undefined}).
+-record(rabbitmq_server, {server = undefined, channel = undefined}).
 
 
 -behaviour(gen_server).
